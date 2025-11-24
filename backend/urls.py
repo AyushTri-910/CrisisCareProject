@@ -15,4 +15,6 @@ urlpatterns = [
     path('api/volunteers/<int:pk>/', views.volunteer_detail),
     path('api/disasters/<int:pk>/', views.disaster_detail),
     path('api/materials/<int:pk>/', views.material_detail),
+    path('api/assignments/', views.assignment_list),
+path('api/assignments/<int:pk>/', views.assignment_detail),
 ]

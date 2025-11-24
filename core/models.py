@@ -85,7 +85,8 @@ class Inventory(models.Model):
 class VolunteerAssignments(models.Model):
     assignment_id = models.AutoField(primary_key=True)
     volunteer = models.ForeignKey(Volunteers, models.DO_NOTHING, blank=True, null=True)
-    area = models.ForeignKey(AffectedAreas, models.DO_NOTHING, blank=True, null=True)
+    # Changed from area to disaster
+    disaster = models.ForeignKey(Disasters, models.DO_NOTHING, blank=True, null=True) 
     role = models.CharField(max_length=100, blank=True, null=True)
     start_date = models.DateField(blank=True, null=True)
     end_date = models.DateField(blank=True, null=True)

@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'CrisisCareDB',      # The DB name we created in Phase 1
-        'USER': 'root',              # Your MySQL username (usually 'root')
-        'PASSWORD': 'rootayush', # <--- PUT YOUR MYSQL PASSWORD HERE
+        'NAME': 'CrisisCareDB',      
+        'USER': 'root',              
+        'PASSWORD': 'rootayush', 
         'HOST': 'localhost',
         'PORT': '3306',
     }
